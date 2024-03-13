@@ -55,9 +55,9 @@ const Navbar = ({ handleOrderPopup }) => {
 
     setTimeout(()=>{
       setAlertShow(false)
-    },3000)
+    },1000)
   }
-
+  
   const handleAdd = () => {
     console.log(editData)
     const {id ,imgUrl,title,description,author,price,rating,type} = editData
@@ -103,6 +103,7 @@ const Navbar = ({ handleOrderPopup }) => {
           }else{
             console.log('Book added successfully',data);
             alertMessage('green','Book added successfully')
+            
           }
           
         })

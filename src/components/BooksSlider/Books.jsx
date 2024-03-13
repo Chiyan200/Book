@@ -39,7 +39,7 @@ const Books = () => {
 
     setTimeout(()=>{
       setAlertShow(false)
-    },3000)
+    },1000)
   }
 
   const func = (p) => {
@@ -92,7 +92,7 @@ const Books = () => {
           }else{
             console.log('Book added successfully',data);
             alertMessage('green','Book updated successfully.')
-            getBooks(Type)
+            getBooks('all')
           }
           
         })
@@ -127,7 +127,7 @@ const Books = () => {
           }else{
             console.log('Book added successfully',data);
             alertMessage('red','Book details Deleted.')
-            getBooks(Type)
+            getBooks('all')
 
             
           }
